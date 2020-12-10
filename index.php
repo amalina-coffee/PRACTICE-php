@@ -65,7 +65,7 @@ session_start();
 
 <?php
 //Adds one to the counter
-mysql_query("UPDATE count SET count = count + 1");
+mysql_query("UPDATE counter SET count = count + 1");
 //Retrieves the current count
 $count = mysql_fetch_row(mysql_query("SELECT count FROM counter"));
 //Displays the count on your site
